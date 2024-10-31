@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body class="overflow-x-hidden">
+  <script>
+    function nav(){
+      const n = document.querySelector('.nl');
+      n.classList.toggle('nl' + 'flex' + 'flex-col' + 'justify-center' + 'items-center' + 'h-full' + 'w-full' + 'bg-rose-400' + 'absolute' + 'top-20');
+    }
+
+  </script>
+
+  <!-- NavBar -->
+  <nav class="nb h-[80px] flex justify-around items-center bg-[#555] text-white sticky top-0 z-10">
+    <!-- Logo -->
+    <div class="text-[40px] font-bold">
+      a.W<i class="relative top-[5px] text-[45px] text-[#f12]">R</i>
+    </div>
+
+    <!-- Nav-Links -->
+    <div class="nl hidden sm:flex gap-[40px]">
+        <a href="#home" class="text-[23px] hover:text-[cyan]"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#about" class="text-[23px] hover:text-[cyan]"><i class="fa-solid fa-user"></i> About</a>
+        <a href="#projects" class="text-[23px] hover:text-[cyan]"><i class="fa-brands fa-product-hunt"></i> Projects</a>
+        <a href="#contact" class="text-[23px] hover:text-[cyan]"><i class="fa-solid fa-address-book"></i> Contact</a>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <i class="fa-solid fa-bars text-[30px] sm:hidden lg:text-[30px] block" onclick="nav()"></i>
+  </nav>
+
+  <!-- Home -->
+  <div class="home h-[500px] sm:h-[100vh] flex justify-around items-center" id="home">
+
+    <!-- Home-Left -->
+    <div class="hl w-[400px] mr-[80px] sm:w-[650px] relative left-[50px]">
+        <h1 class="text-[35px]  sm:text-[60px] font-semibold [text-shadow:_2px_2px_2px_rgb(0,_0,_0.7)]">ABDUL WAHAB REHAN</h1>
+        <p class="sm:text-[20px]">I’m Abdul Wahab Rehan, a recent Computer Science graduate eager to launch my career in IT.
+          Skilled in HTML, CSS, JavaScript, React, Tailwind CSS, and Java, I thrive on problem-solving and teamwork. Passionate
+          about web development, I’m eager to contribute and grow in a dynamic, innovative environment.</p>
+            <button class="p-[12px]  sm:p-[12px] bg-[#455] mt-[15px] hover:bg-[#ccd] hover:scale-[1.1] transition-[.3s_ease-out] "><a href="MyRes/index.html" target="_blank" class="text-white sm:text-white text-[20px] hover:text-black">Click here..</a></button>
+            <button class="p-[12px]  sm:p-[12px] bg-[#455] mt-[15px] ml-[20px] hover:bg-[#ccd] hover:scale-[1.1] transition-[.3s_ease-out]"><a href="#contact" class="text-white sm:text-white text-[20px] hover:text-black">Contact</a></button>
+        
+    </div>
+
+    <!-- Home-Right -->
+    <div class="hr hidden sm:block">
+        <h1 class="text-[65px] font-[700] w-[300px]"><i>Front End</i> Developer</h1>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="about h-[600px] sm:h-[100vh] flex justify-around items-center" id="about">
+     
+    <!-- About-Left -->
+    <div class="al w-[300px] sm:w-[700px] pl-[60px]">
+        <h1 class="text-[35px] sm:text-[50px] font-semibold">About me</h1>
+        <p class="text-[15px] sm:text-[20px]">I’m Abdul Wahab Rehan, a recent Computer Science graduate seeking an entry-level
+          position in IT. Proficient in HTML, CSS, JavaScript, React, Tailwind CSS, and Java, I have a strong foundation in web
+          development. I’m a dedicated learner who thrives in collaborative environments and is excited to tackle challenges,
+          innovate solutions, and contribute to impactful projects in the tech industry.</p>
+            <button class="py-[10px] px-[15px] bg-[#455] mt-[15px] hover:bg-[#ccd] hover:scale-[1.1] transition-[.3s_ease-out] "><a href="rex.pdf" download class="text-white text-[20px] hover:text-black">Resume</a></button>
+    </div>
+
+    <!-- About-Right -->
+    <div class="ar pr-[10px] sm:pr-[50px] pl-[20px] pt-[10px] pb-[20px] bg-[#f23232bb]">
+        <h1 class="text-[30px] sm:text-[40px] font-medium">My Skills</h1>
+
+        <ul class="mt-[10px]">
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-html5"></i> HTML</li>
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-css3"></i> CSS</li>
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-js"></i> Javascript</li>
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-react"></i> React</li>
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-css3"></i> Tailwind CSS</li>
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-microsoft"></i> MS Office</li>
+            <li class="text-[20px] sm:text-[25px]"><i class="fa-brands fa-figma"></i> Figma</li>
+        </ul>
+    </div>
+
+  </div>
+
+  <!-- Projects -->
+  <div class="projects h-[1300px] sm:h-[150vh] flex justify-center items-center" id="projects">
+
+    <!-- Project-Contaner -->
+    <div class="sm:pcc">
+    <h1 class="text-center text-[35px] sm:text-[50px] font-semibold">My Projects</h1>
+    <div class="pc flex-col sm:h-[700px] w-[1000px] p-[30px] bg-[#d55f3366] flex flex-wrap justify-center items-center gap-[50px]">
+        <div title="A Tours and Travels website made using HTML, CSS and Javascript." class="pr h-[250px] w-[350px] cursor-pointer hover:scale-[1.1] hover:transition-[.3s_ease-out] overflow-hidden">
+            <img src="bg.jpg" alt="" class="h-[70%] w-[100%]">
+        <div class="pt h-[30%] w-[100%] bg-white flex justify-center items-center font-medium text-[20px]">Toursaza</div>
+        </div>
+        <div title="A Used Car sale predictor made using Random Forest Algorithm." class="pr h-[250px] w-[350px] cursor-pointer hover:scale-[1.1] hover:transition-[.3s_ease-out] overflow-hidden">
+            <img src="car.jpg" alt="" class="h-[70%] w-[100%]">
+
+        <div class="pt h-[30%] w-[100%] bg-white flex justify-center items-center font-medium text-[20px]">Used car sales predictor</div>
+        </div>
+        <div title="A Crop Reccomendation Model mad using Random Forest Algorithm." class="pr h-[250px] w-[350px] cursor-pointer hover:scale-[1.1] hover:transition-[.3s_ease-out] overflow-hidden">
+            <img src="crp.jpg" alt="" class="h-[70%] w-[100%]">
+
+        <div class="pt h-[30%] w-[100%] bg-white flex justify-center items-center font-medium text-[20px]">Rezin</div>
+        </div>
+        <div title="A Personal Portfolio website made using HTML and Tailwind CSS." class="pr h-[250px] w-[350px] cursor-pointer hover:scale-[1.1] hover:transition-[.3s_ease-out] overflow-hidden">
+            <a href="#"><img src="pt.jpg" alt="" class="h-[70%] w-[100%]"></a>
+
+        <div class="pt h-[30%] w-[100%] bg-white flex justify-center items-center font-medium text-[20px]">Personal Portfolio Website</div>
+        </div>
+    </div>
+</div>
+
+  </div>
+
+  <!-- Contact -->
+  <div class="contact h-[600px] sm:h-[100vh] flex justify-around items-center" id="contact">
+
+    <!-- Contact-Left -->
+    <div class="cf scale-[.8] sm:scale-[1]">
+    <h1 class="text-[35px] sm:text-[40px] font-semibold">Get in Touch</h1>
+    <form action="/" class="flex flex-col gap-[15px] items-center justify-center w-[350px] h-[400px] p-[20px] bg-[#f78]">
+        <input type="text" class="w-[80%] p-[10px]" placeholder="Name" required>
+        <input type="email" class="w-[80%] p-[10px]" placeholder="Email" required>
+        <textarea class="w-[80%] p-[10px] h-[200px]" placeholder="Message"></textarea>
+        <button type="submit" class="w-[80%] p-[10px] bg-[#766] text-white hover:text-black hover:bg-white hover:scale-[1.1] hover:transition-[.3s_ease-out]">Send</button>
+    </form>
+    </div>
+    
+    <!-- Contact-Right -->
+    <div class="cr hidden sm:flex justify-center items-center relative right-[100px]">
+        <h1 class="text-[80px] w-[250px] text-start font-semibold">Connect with me</h1>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="sm:h-[150px] flex justify-around items-center bg-[#dfecdd]">
+
+    <!-- Footer-Left -->
+    <div class="fl scale-[.7] sm:scale-[1]">
+        <h1 class="font-bold text-[30px]">a.W<i class="relative top-[3px]">R</i></h1>
+    </div>
+
+    <!-- Footer-Middle -->
+    <div class="fm scale-[.6] relative left-[30px] sm:scale-[1]">
+        <h2 class="text-[22px] font-medium">Contact Info</h2>
+        <p><i class="fa-solid fa-phone relative right-[5px]"></i>Ph.No: +91 9100657417</p>
+        <p><i class="fa-solid fa-envelope relative right-[5px]"></i>Email: wahabrehan7@gmail.com</p>
+        
+    </div>
+
+    <!-- Footer-Right -->
+    <div class="fr scale-[.7] sm:scale-[1] flex justify-around items-center flex-wrap gap-[20px]">
+        <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin text-[30px] hover:scale-[1.2] hover:transition-[.3s_ease-out] cursor-pointer"></i></a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram text-[30px] hover:scale-[1.2] hover:transition-[.3s_ease-out] cursor-pointer"></i></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp text-[30px] hover:scale-[1.2] hover:transition-[.3s_ease-out] cursor-pointer"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github text-[30px] hover:scale-[1.2] hover:transition-[.3s_ease-out] cursor-pointer"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter text-[30px] hover:scale-[1.2] hover:transition-[.3s_ease-out] cursor-pointer"></i></a>
+    </div>
+  </footer>
+
+
+</body>
+</html>

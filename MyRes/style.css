@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Outfit, sans-serif;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    text-decoration: underline;
+}
+hr{
+    margin-top: 20px;
+}
+.res-box {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 1220px;  
+    width: 730px;
+    
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 2px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+#res-id, #obj, #ed, #sk, #prj, #cer, #dec {
+    margin-bottom: 20px;
+    width: 700px;
+    
+}
